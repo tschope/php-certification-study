@@ -1,0 +1,55 @@
+-# Core System Components
+- The main application logic is in root folder.
+- The frontend code is in frontend/.
+- Main projects use Laravel 12
+- The project uses DDEV to local development
+- Few common commands:
+    - ddev start
+    - ddev stop
+    - ddev restart
+    - ddev composer install
+    - ddev composer update
+    - ddev npm install
+    - ddev artisan migrate
+- Important packages:
+    - Laravel Sanctum
+    - Spatie Permissions
+    - Spatie Query Builder
+    - Spatie PDF to Image
+    - Spatie Activitylog
+- ever command related to artisan, composer should be prefixed with ddev not php, example:
+    - ddev artisan migrate
+    - ddev composer install
+
+# Frontend Code Structure
+- The frontend in the frontend/ folder.
+- Is use Nuxt 3
+- Vue 3
+- PrimeVue 4
+- vue-api-query for api requests with Models at the models/ folder
+```
+CRUD operations for the models
+
+### create
+const model = new Model({ foo: 'bar' })
+
+model.save()
+
+### read
+const model = await Model.find(1)
+
+### update
+const model = await Model.find(1)
+
+model.foo = 'bar'
+
+model.save()
+
+### delete
+const model = await Model.find(1)
+
+model.delete()
+```
+- to run the frontend project:
+    - ddev npm install
+    - ddev nuxt
