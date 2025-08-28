@@ -1,6 +1,6 @@
 # PHP Certification Study - Quiz System
 
-A comprehensive quiz application designed to help developers test their PHP knowledge and prepare for PHP certification exams. The system features a Laravel 11 backend API with a modern Nuxt 3 frontend, providing an interactive quiz experience with real-time scoring and detailed result reviews.
+A comprehensive quiz application designed to help developers test their PHP knowledge and prepare for PHP certification exams. The system features a Laravel 12 backend API with a modern Nuxt 3 frontend, providing an interactive quiz experience with real-time scoring and detailed result reviews.
 
 ## 🎯 Project Purpose
 
@@ -13,7 +13,7 @@ This application serves as a study tool for PHP developers who want to:
 
 ## 🏗️ Architecture
 
-### Backend (Laravel 11)
+### Backend (Laravel 12)
 - **API-first architecture** with RESTful endpoints
 - **ULID primary keys** for better performance and security
 - **Comprehensive validation** with custom request classes
@@ -40,7 +40,7 @@ This application serves as a study tool for PHP developers who want to:
 ## 🛠️ Technology Stack
 
 ### Backend
-- **Laravel 11** - PHP framework
+- **Laravel 12** - PHP framework
 - **MySQL** - Database
 - **Laravel Sanctum** - API authentication (ready for future implementation)
 - **Spatie Packages** - Query Builder, Permissions, Activity Log
@@ -74,7 +74,7 @@ Before running this project locally, ensure you have:
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone git@github.com:tschope/php-certification-study.git
 cd php-certification-study
 
 # Start DDEV environment
